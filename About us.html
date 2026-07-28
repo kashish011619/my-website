@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Layout</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    padding:10px;
+   
+}
+
+/* Main Container */
+.container{
+    width:100%;
+    /* border:2px solid #000; */
+     background-color:rgb(195, 188, 190);
+
+}
+.header{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    /* align-items:center; */
+     padding:15px;
+    border-bottom:2px solid #000; 
+}
+.logo{
+    height: 80px;
+    width:80px ;
+}
+.menu li{
+    display:inline-block;
+    margin-left:20px;
+}
+.menu a{
+    text-decoration:none;
+    color:#aa2222;
+    font-weight:bold; 
+    font-size: 20px;  
+}
+.menu a:hover{
+    color:orange;  
+}
+.banner{
+    height: 350px;
+    border-bottom:2px solid #000;
+    text-align: center;
+    font-size:24px; 
+    /* background-color: rgb(97, 182, 97); */
+    background-image: url(images.jpg);
+    background-size: cover;
+    background-position: center;
+    color:#000000;
+    
+}
+.content{
+  display:flex;
+    /* flex-wrap: wrap; */
+    padding:10px;
+    gap:20px;
+    border-bottom:2px solid #000;
+    background-color: antiquewhite;
+    color:black
+
+}
+.left{
+    width:30%;
+    
+}
+.small-box{
+    height:300px;
+    margin: 90px;
+    border:2px solid #000;
+    margin-bottom:20px;
+    text-align: center;
+     /*justify-content:center;
+    align-items:center; */
+    background: #f1fff1;
+    }
+.right{
+     width:70%;
+     border:2px solid #000;
+     min-height:260px;
+     text-align: center;
+     font-size:24px;
+    /*justify-content:center;
+    align-items:center; */
+    
+}
+.footer-boxes{
+    display:flex;
+    padding:20px;
+    border-bottom:2px solid #000;
+    justify-content:space-around;   
+}
+.footer-box{
+    width:22%;
+    height:130px;
+    border:2px solid #000;
+    text-align: center;
+    font-size:20px;
+}
+.copyright{
+    text-align:center;
+    padding:15px;
+    background: #2e7d32;
+   background-color:beige;
+
+}
+/* Tablet */
+@media(max-width:768px){
+
+    .content{
+        flex-direction:column;
+    }
+    
+    .left,
+    .right{
+        width:100%;
+    }
+
+    .footer-boxes{
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .footer-box{
+        width:48%;
+    }
+}
+</style>
+
+</head>
+<body>
+<div class="container">
+     <div class="header">
+        <div class="logo"><img src="Logo.jpg"height="90" width="90"></div>
+        <div class="menu">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About us.html">About us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Gallery.html">gallery</a></li>
+                <li><a href="Contact us.html">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+     <div class="banner">
+        <!-- Banner Section -->
+         <h2><b>Every Page Holds a New Journey 📖</b></h2><br><br>
+         <h3>Discover, connect, and lose yourself in millions of stories. We are your digital sanctuary for literary adventures, bringing carefully curated books directly to your doorstep.</h3><br>
+         <h5>Thousands of books. Endless possibilities.Subheadline:
+            Dive into captivating stories, discover new authors, and build your personal library with books you'll love.</b></h5>
+        
+         </h5>
+    </div>
+
+    <div class="content">
+        <div class="left">
+            <div class="small-box"><img src="aboutus.png" height="300px" width="100%"></div>
+        </div>
+        <div class="right">
+             <p>
+              <h5><b><h2>Founded in 2026</h2><br>
+                <h3>Founded in 2026, [Your Bookstore Name] began with a simple belief: finding the perfect book should be just as magical as reading it. What started as a small, local passion project has grown into a vibrant global community of book lovers. We source the best fiction, non-fiction, academic, and rare editions to fuel your curiosity.</h3><br>
+                <h3>Our Mission:To cultivate a lifelong love of reading by making books accessible, affordable, and exciting for everyone. We strive to be more than just an online store; we aim to be your trusted literary companion.</h5>
+             </p>
+        </div>
+    </div>
+
+    <div class="footer-boxes">
+<div class="footer-box">🏢 About Us<h5>Your trusted online bookstore. Thousands of books across all genres.Inspiring readers every day.</h5></div>
+        <div class="footer-box">🔗 Quick Links<h5>
+            📚 Books<br>
+            🛒 Shop<br>
+            📞 Contact Us</h5></div>
+        <div class="footer-box">📞 Contact Information<h5>
+            📧 kashishmande8580@gmail.com<br>
+            📱 +91 8600246286<br>
+            📍 Ozar, Maharashtra, India</h5></div>
+        <div class="footer-box">🌐 Follow Us<h5>
+            📘 Facebook<br>
+            📸 Instagram<br>
+            ▶️ YouTube</h5></div>
+    </div>
+
+     <div class="copyright">
+        <!-- © 2026 Your Website Name -->
+          <p>  © 2026 BookStore. All Rights Reserved. 📚✨</p>
+    </div>
+
+</div>
+
+</body>
+</html>

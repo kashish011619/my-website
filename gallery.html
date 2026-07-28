@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Layout</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    padding:10px;
+    /* background: linear-gradient(to right,#e8f5e9 , #e3f2fd); */
+}
+
+/* Main Container */
+.container{
+    width:100%;
+    /* border:2px solid #000; */
+    /* background-color: rgb(95, 182, 95); */
+   background-color:rgb(195, 188, 190);
+}
+.header{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    /* align-items:center; */
+     padding:25px;
+    border-bottom:2px solid #000; 
+     /* background-color: rgb(46, 220, 243); */
+} 
+.logo{
+    height: 80px;
+    width:80px ;
+}
+.menu li{
+    display:inline-block;
+    margin-left:20px;
+}
+.menu a{
+    text-decoration:none;
+    color:#aa2222;
+    font-weight:bold; 
+    font-size: 20px;  
+}
+.menu a:hover{
+    color:orange;  
+}
+.banner{
+    height: 350px;
+    border-bottom:2px solid #000;
+    text-align: center;
+    font-size:24px; 
+    /* background-color:#64b5f6 ; */
+    background-image: url(images.jpg);
+    background-size: cover;
+    background-position: center;
+    color:black
+    
+}
+.content{
+    display:flex;
+    padding:20px;
+    gap:20px;
+    border-bottom:2px solid #000;
+       background-color: antiquewhite;
+}
+.left, .right, .right1{
+    width:40%;
+    display:flex;
+     flex-direction: column;
+     gap: 20px;
+}
+.small-box{
+    height:200px;
+
+    margin-bottom:20px;
+    text-align: center;
+     /*justify-content:center;
+    align-items:center; */
+    /* background: #f1fff1; */
+    
+}
+/* .right{
+     width:70%;
+     border:2px solid #000;
+     min-height:260px;
+     text-align: center;
+     font-size:24px;
+    justify-content:center;
+    align-items:center; 
+} */
+.footer-boxes{
+    display:flex;
+    padding:20px;
+    border-bottom:2px solid #000;
+    justify-content:space-around;   
+}
+.footer-box{
+    width:22%;
+    height:130px;
+    border:2px solid #000;
+    text-align: center;
+    font-size:20px;
+      background-color: rgb(139, 117, 135);
+      background-color: rgb(139, 117, 135);
+}
+.copyright{
+    text-align:center;
+    padding:15px;
+    background: #2e7d32;
+   background-color:beige;
+}
+/* Tablet */
+@media(max-width:768px){
+
+    .content{
+        flex-direction:column;
+    }
+    
+    .left,
+    .right{
+        width:100%;
+    }
+
+    .footer-boxes{
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .footer-box{
+        width:48%;
+    }
+
+}
+</style>
+
+</head>
+<body>
+<div class="container">
+     <div class="header">
+        <div class="logo"><img src="logo.jpg" height="90" width="90">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About us.html">About us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Gallery.html">gallery</a></li>
+                <li><a href="Contact us.html">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+     <div class="banner"><h2><b>Explore Worlds, One Page at a Time</b></h2><br>
+        <h3>Browse our curated gallery of bestselling fiction, non-fiction, and rare editions. Find your next great read today.</h3><br>
+        <h5><b>Call to Action (CTA) Button: Browse Categories / View Bestsellers</b></h5>
+    </div>
+
+    <div class="content">
+        <div class="left">
+            <div class="small-box"><h3>Explore Our Book Collection</h3>
+
+               <p>Step into a world of knowledge and imagination. Browse our gallery featuring bestselling novels, educational books, children's stories, self-help guides, and much more. Discover new arrivals, popular collections, and beautifully designed books for every reader.</p>
+
+             <hr>
+              
+            📚 Bestsellers<br>
+            📖 New Arrivals<br>
+            🎓 Academic Books<br>
+            🧒 Children's Books<br>
+              </div>
+            <div class="small-box"><img src="1.jpg" ></div>
+        </div>
+        <div class="right">
+            <div class="small-box"><img src="2.jpg" height="200" width="70%"></div>
+            <div class="small-box"><img src="3.jpg" height="190"></div>
+        </div>
+        <div class="righ1">
+            <div class="small-box"><img src="4.jpg"></div>
+        </div>
+    
+    
+        <!-- <div class="right">
+            Main Content Area 
+             <p>
+                <h2>Our Mission For a Greener Planet</h2><br>                
+                <h3>Save Earth Initiative</h3><br>
+                <h5>Our mission is to protect the environment through tree planation,
+                recycling,pollution control,and sustainable living practices.
+                We believe that every indivisual can contribute to creating
+                a cleaner and greener palnet. By working together,we can reduce environmental
+                damage and ensure a better future for generation to come           
+             </h5>
+             </p>
+        </div> -->
+    </div>
+
+    <div class="footer-boxes">
+        <div class="footer-box">🏢 About Us<h5>Your trusted online bookstore.Thousands of books across all genres.Inspiring readers every day.</h5></div>
+        <div class="footer-box">🔗 Quick Links<h5>
+            📚 Books<br>
+            🛒 Shop<br>
+            📞 Contact Us</h5></div>
+        <div class="footer-box">📞 Contact Information<h5>
+            📧 kashishmande8580@gmail.com<br>
+            📱 +91 8600246286<br>
+            📍 Ozar, Maharashtra, India</h5></div>
+        <div class="footer-box">🌐 Follow Us<h5>
+            📘 Facebook<br>
+            📸 Instagram<br>
+            ▶️ YouTube</h5></div>
+      </div>
+
+     <div class="copyright">
+        <!-- © 2026 Your Website Name -->
+          <p>© 2026 BookStore. All Rights Reserved. 📚✨.</p>
+    </div>
+
+</div>
+
+</body>
+</html
